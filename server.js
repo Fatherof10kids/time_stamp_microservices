@@ -33,6 +33,6 @@ app.get('/:URI',(req,res)=>{
   res.json(resObject);
   //res.json({message :  'success'});
 });
-app .listen(port, ()=>{
+app .listen(process.env.PORT || 5000, ()=>{
 console.log('Our app is running on' + port);
 });
