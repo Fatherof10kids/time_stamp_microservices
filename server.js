@@ -8,7 +8,7 @@ var router = express.Router();              // get an instance of the express Ro
 // test route
 app.use(router);
 
-app.get('/:URI',(req,res)=>{
+router.get('/:URI',(req,res)=>{
   var query = req.params.URI;
   var resObject = {
     "unix": 0,
